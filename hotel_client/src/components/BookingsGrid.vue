@@ -4,10 +4,8 @@
       <input type="checkbox" name="checkinstatus" v-model="checkedInStatus">View Checked In</input>
     </div>
     <div class="booking" v-for="booking in bookings" v-if="checkedInStatus == booking.checkedIn">
-      <!-- <div v-if="checkedInStatus == booking.checkedIn" class="bookingwrapper"> -->
-
       <h2>{{ booking.firstName }} {{booking.secondName}}</h2>
-      <p>{{ booking._id}}</p>
+      <!-- <p>{{ booking._id}}</p> -->
       <p>{{ booking.email }}</p>
       <p><input type="checkbox" name="checkedin" v-model="booking.checkedIn" v-on:change="changeStatus(booking)">Checked In/Out</input></p>
 

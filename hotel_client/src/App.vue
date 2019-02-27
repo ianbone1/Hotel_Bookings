@@ -69,7 +69,8 @@ html {
 }
 
 body {
-  background: url('./assets/background.jpg') repeat;
+  background: url('./assets/background.jpg');
+  background-attachment:fixed;
   height: 100%;
   background-position: center;
   background-repeat: repeat;
